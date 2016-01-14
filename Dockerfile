@@ -21,5 +21,8 @@ ADD localFrontierSquid.sh /root/localConfig/localFrontierSquid.sh
 ADD run-cvmfs.sh /etc/cvmfs/run-cvmfs.sh
 ADD startcondor.sh /root/startcondor.sh
 ADD etc-cubied-condor.conf /etc/cubie.d/condor.conf
+ADD start.sh /root/start.sh
 
 RUN chmod uga+rx /etc/cvmfs/run-cvmfs.sh /root/startcondor.sh
+
+ENTRYPOINT /root/start.sh
