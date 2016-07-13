@@ -12,7 +12,7 @@ RUN yum -y install http://linuxsoft.cern.ch/cern/slc64/x86_64/yum/extras/HEP_OSl
 
 # Install Condor
 ADD etc-yum-htcondor.repo /etc/yum.repos.d/htcondor-stable.repo
-RUN yum -y install condor
+RUN yum -y install condor wget
 ADD condor_config.local /etc/condor/condor_config.local
 
 ADD etc-cvmfs-default-local /etc/cvmfs/default.local
