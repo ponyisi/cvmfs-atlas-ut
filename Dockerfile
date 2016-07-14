@@ -18,6 +18,10 @@ ADD condor_config.local /etc/condor/condor_config.local
 # Install OSG WN base
 RUN yum -y install yum-plugin-priorities; yum -y install https://repo.grid.iu.edu/osg/3.3/osg-3.3-el6-release-latest.rpm osg-wn-client wget rsync ; yum clean all
 
+# Install ganglia
+RUN yum -y install ganglia-gmond ; yum clean all
+ADD etc-ganglia-gmond.conf /etc/ganglia/gmond.conf
+
 ADD etc-cvmfs-default-local /etc/cvmfs/default.local
 ADD localFrontierSquid.sh /root/localConfig/localFrontierSquid.sh
 
