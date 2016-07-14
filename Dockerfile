@@ -20,7 +20,7 @@ RUN yum -y install yum-plugin-priorities; yum -y install https://repo.grid.iu.ed
 
 # Install ganglia
 RUN yum -y install ganglia-gmond ; yum clean all
-ANDD etc-ganglia-gmond.conf /etc/ganglia/gmond.conf
+ADD etc-ganglia-gmond.conf /etc/ganglia/gmond.conf
 
 ADD etc-cvmfs-default-local /etc/cvmfs/default.local
 ADD localFrontierSquid.sh /root/localConfig/localFrontierSquid.sh
