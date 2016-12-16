@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Creating paths"
+echo "Creating paths"	
 mkdir -p /cvmfs/atlas.cern.ch /cvmfs/atlas-condb.cern.ch \
          /cvmfs/atlas-nightlies.cern.ch /cvmfs/sft.cern.ch \
          /cvmfs/cernvm-prod.cern.ch /cvmfs/geant4.cern.ch \
