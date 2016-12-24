@@ -20,7 +20,7 @@ ADD etc-ganglia-gmond.conf /etc/ganglia/gmond.conf
 #ADD etc-cvmfs-default-local /etc/cvmfs/default.local
 ADD localFrontierSquid.sh /root/localConfig/localFrontierSquid.sh
 
-ADD etc-run-cvmfs.sh /etc/cvmfs/run-cvmfs.sh
+ADD run-cvmfs.sh /root/run-cvmfs.sh
 ADD startcondor.sh /root/startcondor.sh
 #ADD etc-cubied-condor.conf /etc/cubie.d/condor.conf
 ADD start.sh /root/start.sh
