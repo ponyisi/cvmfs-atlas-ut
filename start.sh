@@ -1,5 +1,5 @@
 #!/bin/bash
-/etc/cvmfs/setup-cvmfs-portable.sh
+/etc/cvmfs/run-cvmfs.sh
 /root/startcondor.sh
 service gmond start
 exec bash
