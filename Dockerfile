@@ -25,6 +25,6 @@ ADD startcondor.sh /root/startcondor.sh
 #ADD etc-cubied-condor.conf /etc/cubie.d/condor.conf
 ADD start.sh /root/start.sh
 
-RUN chmod uga+rx /etc/cvmfs/setup-cvmfs-portable.sh /root/startcondor.sh /root/start.sh
+RUN chmod uga+rx /root/run-cvmfs.sh /root/startcondor.sh /root/start.sh
 
 ENTRYPOINT /root/start.sh
